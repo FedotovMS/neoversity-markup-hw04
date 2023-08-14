@@ -8,6 +8,7 @@
   --background-color: #ffffff;
   --action-color: #404bbf;
   --cornflower: #e7e9fc;
+  --lightslate: #8e8f99;
 }
 
 .visually-hidden {
@@ -183,6 +184,14 @@ body {
 
 .hero-section {
   background-color: var(--primary-color);
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/bckgrd/bg-img.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 188px 0;
 }
 
@@ -240,6 +249,16 @@ body {
   gap: 24px;
 }
 
+.values-icon-block {
+  padding: 24px 100px;
+  border-radius: 4px;
+  background-color: var(--color-txt-button);
+  margin-bottom: 8px;
+}
+
+.values-icon {
+  display: block;
+}
 .values-item {
   width: calc((100% - 3 * 24px) / 4);
 }
@@ -254,7 +273,6 @@ body {
 
 .team-title {
   font-size: 36px;
-  font-weight: 500;
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
@@ -295,7 +313,6 @@ body {
 }
 .team-names {
   font-size: 20px;
-  font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--primary-color);
@@ -305,6 +322,51 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
+}
+
+.team-socials-list {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-socials-item {
+  display: block;
+  width: 40px;
+  height: 40px;
+  padding: 12px;
+  background-color: var(--action-color);
+  border-radius: 50%;
+}
+
+.socials-icon {
+  fill: var(--background-color);
+}
+
+.customers-title {
+  margin-bottom: 72px;
+  text-align: center;
+}
+
+.customers-list {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+}
+
+.customers-item {
+  width: 168px;
+  height: 88px;
+  border-radius: 4px;
+  border: 1px solid var(--lightslate);
+  padding: 16px 32px;
+}
+
+.customers-icon {
+  fill: var(--lightslate);
 }
 
 .footer {
@@ -315,11 +377,33 @@ body {
 .logo-footer {
   margin-bottom: 16px;
 }
+
 .footer-text {
   max-width: 264px;
   color: var(--color-txt-button);
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+
+.footer-socials-list {
+  gap: 16px;
+}
+
+.footer-socials-item {
+  padding: 8px;
+}
+
+.footer-container {
+  display: flex;
+  gap: 120px;
+  align-items: baseline;
+}
+
+.social-media-title {
+  color: var(--background-color);
+  font-size: 16px;
+  line-height: calc(24 / 16);
+  letter-spacing: 0.32px;
 }
 
 /* ====== PORTFOLIO ======= */
@@ -384,6 +468,12 @@ body {
 }
 
 .gallery-title {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: calc(24 / 20);
+  letter-spacing: 0.4px;
+  color: var(--primary-color);
+
   margin-bottom: 8px;
 }
 
